@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // ==================== database connection =========================
-mongoose.connect('mongodb+srv://admin:admin@todolist.nplr6.mongodb.net/?retryWrites=true&w=majority&appName=ToDoList', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://???????????????', { useNewUrlParser: true, useUnifiedTopology: true }) // MongoDB URI insert here
     .then(() => {
         console.log("DB connected");
     })
@@ -26,7 +26,7 @@ app.use(session({
     resave: false,                 // Do not save session if nothing is modified
     saveUninitialized: false,      // Do not create session until something is stored
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://admin:admin@todolist.nplr6.mongodb.net/?retryWrites=true&w=majority&appName=ToDoList',    // MongoDB URI
+        mongoUrl: 'mongodb+srv://????????????????',    // MongoDB URI insert here
         collectionName: 'sessions'   // Name of the collection to store session data
     }),
     cookie: {
