@@ -30,6 +30,7 @@ The ToDo List Application is a robust web application built using Node.js, Expre
 - **Note Management**: Utilize the `/note` endpoints to create, view, edit, and delete notes.
 
 ## Project Structure
+```
 .
 ├── app.js               # Main application entry point
 ├── models               # Contains Mongoose models for data representation
